@@ -14,17 +14,18 @@
 
 // Document Width: raw numbers
 @full-px: 960px;
-@main-px: 566px;
-@sidebar-px: 331px;
+@main-px: 597px;
+@sidebar-px: 300px;
 @grid-px: 69px;
 @gutter-px: 48px;
 
 // Document Percentages
 @full-width: 90%; // rather arbitrary there, but need something
-@main-width: percentage(@main-px / @full-px);
-@sidebar-width: percentage(@sidebar-px / @full-px);
+@main-width: percentage(@main-px / @full-px) - @gutter-width;
+@sidebar-width: percentage(@sidebar-px / @full-px) - @gutter-width;
 @grid-width: percentage(@grid-px / @full-px);
 @gutter-width: percentage(@gutter-px / @full-px);
+@half-gutter-width: @gutter-width/2;
 
 body {
     font: normal @one-em Helvetica, Arial, sans-serif;
@@ -67,6 +68,7 @@ h1 {
 	margin: 0 auto 6%;
 	width: @main-width; 
 	border: 1px solid #000;
+	padding: @half-gutter-width;
 }
 #main>article {
 	padding: 0.8em @gutter-width;
@@ -80,6 +82,8 @@ h1 {
 	float: right;
 	width: @sidebar-width;
 	border: 1px solid #000;
+	padding: @half-gutter-width;
+	overflow: hidden;
 }
 
 #footer {

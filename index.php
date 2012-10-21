@@ -1,6 +1,7 @@
 <?php
 	$js = 'library/javascript';
 	$styles = 'library/styles';
+	$images = 'library/images';
 	$zTabs = 'library/javascript/zTabs';
 	
 	require('library/includes/lessc.inc.php');
@@ -71,7 +72,6 @@
 	</div>
 
 	<div id="main">
-		<h2>Main Content</h2>
 	</div>
 
 	<div id="sidebar">

@@ -1,0 +1,87 @@
+// Color Variables
+// Color numbers come from color template, different shades
+@gold: #fbb000;
+@medium_blue1: #047b9c;
+@medium_blue4: #4dbede;
+@medium_blue5: #87cbde;
+@dark_blue1: #1230ab;
+@dark_blue3: #08207f;
+@light_orange4: #fecb54;
+@light_orange5: #fedf98;
+
+// Font Sizes
+@one-em: 16px; // Generally 16px
+
+// Document Width: raw numbers
+@full-px: 960px;
+@main-px: 566px;
+@sidebar-px: 331px;
+@grid-px: 69px;
+@gutter-px: 48px;
+
+// Document Percentages
+@full-width: 90%; // rather arbitrary there, but need something
+@main-width: percentage(@main-px / @full-px);
+@sidebar-width: percentage(@sidebar-px / @full-px);
+@grid-width: percentage(@grid-px / @full-px);
+@gutter-width: percentage(@gutter-px / @full-px);
+
+body {
+    font: normal @one-em Helvetica, Arial, sans-serif;
+    background: #eee;
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3 {
+	font-family: 'Simonetta', serif;
+}
+
+h1 {
+	font-size: @one-em*2;
+	font-weight: normal;
+}
+
+#pageWrapper {
+	margin: @gutter-px auto;
+	width: @full-width;
+	background: #fff;
+}
+
+#header {
+	height: @one-em*5;
+}
+
+#nav {
+	margin: @one-em auto;
+	position: relative;
+}
+#nav li {
+	display: inline-block;
+	width: (@grid-width*2)+@gutter-width;
+	margin: 0 @gutter-width/2;
+}
+
+#main {
+	float: left;
+	margin: 0 auto 6%;
+	width: @main-width; 
+	border: 1px solid #000;
+}
+#main>article {
+	padding: 0.8em @gutter-width;
+	margin: 0 auto;
+}
+.section {
+	padding: 0 @grid-width;
+}
+
+#sidebar {
+	float: right;
+	width: @sidebar-width;
+	border: 1px solid #000;
+}
+
+#footer {
+	clear: both;
+}

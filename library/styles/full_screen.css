@@ -1,0 +1,53 @@
+body {
+  font: normal 16px Helvetica, Arial, sans-serif;
+  background: #eee;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Simonetta', serif;
+}
+h1 {
+  font-size: 32px;
+  font-weight: normal;
+}
+#pageWrapper {
+  margin: 48px auto;
+  width: 90%;
+  background: #fff;
+}
+#header {
+  height: 80px;
+}
+#nav {
+  margin: 16px auto;
+  position: relative;
+}
+#nav li {
+  display: inline-block;
+  width: 19.375%;
+  margin: 0 2.5%;
+}
+#main {
+  float: left;
+  margin: 0 auto 6%;
+  width: 58.958333333333%;
+  border: 1px solid #000;
+}
+#main>article {
+  padding: 0.8em 5%;
+  margin: 0 auto;
+}
+.section {
+  padding: 0 7.1875%;
+}
+#sidebar {
+  float: right;
+  width: 34.479166666667%;
+  border: 1px solid #000;
+}
+#footer {
+  clear: both;
+}

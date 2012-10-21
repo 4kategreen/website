@@ -1,8 +1,3 @@
-<?php 
-  $page = 'resume';
-  include('templates/header.inc');
-?>
-
   <div id="summary" class="resume_section">
     <h2>Summary</h2>
     <p class="right">Ten years of experience in web design and development. Have worked all aspects in the development of intelligent, intuitive and adaptive web sites with a focus on delivering a robust and quality product. Has a proven track record of quickly learning and mastering new development methodologies and has successfully implemented them for clients.</p>
@@ -46,8 +41,6 @@
   <div id="download" class="resume_section">
     <h2>Download</h2> 
     <div class="right">
-      <a href="portfolio/green_resume.pdf"><img src="images/pdf-imate.png" title="Download a pdf version" /></a>
+      <a href="portfolio/green_resume.pdf"><img src="library/images/pdf-imate.png" title="Download a pdf version" /></a>
     </div>
   </div>
-
-<?php include('templates/footer.inc'); ?>

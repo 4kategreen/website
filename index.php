@@ -57,25 +57,15 @@
 	
 	<div id="nav">
 		<ul id="mainTabs">
-			<li id="home"><a href="#">Home</a></li>
+			<li id="home"><a href="main.php">Home</a></li>
 			<li id="running"><a href="#running_subrow">Running</a></li>
-			<li id="portfolio"><a href="#portfolio_subrow">Portfolio</a></li>
+			<li id="resume"><a href="resume.php">Resume</a></li>
 		</ul>
 
 		<div id="subRows">
 			<ul id="running_subrow">
-				<li id="race_tracker"><a href="#race_tracker_subrow">Race Tracker</a></li>
-				<li id="something_else"><a href="#">Something Else</a></li>
-			</ul>
-
-			<ul id="portfolio_subrow">
-				<li id="portfolio_home"><a href="#">Home</a></li>
-				<li id="resume"><a href="#">Resume</a></li>
-			</ul>
-
-			<ul id="race_tracker_subrow">
-				<li id="race_tracker_detail"><a href="#">Detail</a></li>
-				<li id="race_tracker_whatever"><a href="#">Whatever</a></li>
+				<li id-"running_about"><a href="running.php">About</a></li>
+				<li id="race_tracker"><a href="running/race_tracker.php">Race Tracker</a></li>
 			</ul>
 		</div>
 	</div>

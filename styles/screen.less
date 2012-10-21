@@ -1,0 +1,262 @@
+/* Color Variables */
+/* Color numbers come from color template, different shades */
+@gold: #fbb000;
+@medium_blue1: #047b9c;
+@medium_blue4: #4dbede;
+@medium_blue5: #87cbde;
+@dark_blue1: #1230ab;
+@dark_blue3: #08207f;
+@light_orange4: #fecb54;
+@light_orange5: #fedf98;
+
+@table-border: 1px solid @dark_blue3;
+
+/* Global Styles */
+body {
+	background-color: #f5f5f5;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	padding: 0;
+	margin: 0;
+}
+
+h1,h2,h3 {
+	font-family: 'Simonetta', serif;
+	padding: 0;
+	margin: 0;
+	font-weight:normal;
+}
+
+h1 {
+	position: relative;
+	top: 75px;
+	left: 40px;
+	font-size: 525%;
+	text-transform: uppercase;
+	color: @dark_blue1;
+	text-shadow: 4px 4px 4px @medium_blue4;
+	letter-spacing: 3px;
+	min-width: 1005px;
+}
+
+h2 {
+	color: @gold;
+	font-size: 135%;
+	padding-top: 1em;
+}
+
+h3 {
+	padding: 3px 0 0 0;
+	margin: 0;
+	font-size: 1.15em;
+	font-weight: normal;
+	font-style: italic;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+p,li {
+	line-height: 1.3em;
+	list-style: disc inside;
+}
+
+img {
+	border: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #87cbde;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+table {
+	width: 70%;
+	border: @table-border;
+	border-collapse: collapse;
+}
+th {
+	background-color: @medium_blue5;
+}
+
+th,td {
+	border: @table-border;
+}
+
+#container {
+	background-color: #ffffff;
+	width: 80%;
+	min-height: 600px;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 15px 0 0 0;
+	border-left: 1px solid @dark_blue3;
+	border-right: 1px solid @dark_blue3;
+}
+#container>* {
+	padding-left: 25px;
+}
+
+#header {
+	width: 80%;
+	margin: 0 auto;
+	height: 250px;
+	border-bottom: 1px solid @dark_blue3;
+	border-left: 1px solid @medium_blue1;
+	border-right: 1px solid @medium_blue1;
+	padding: 0;
+	background: url(../images/signature.png) 35% 70% no-repeat @medium_blue1;
+}
+#header #contact_info {
+	position: relative;
+	top: 80px;
+	float: right;
+	padding-right: 10px;
+}
+
+#footer {
+	width: 80%;
+	margin: 0 auto;
+	padding: 0;
+	height: 100px;
+	border-top: 1px solid #dddddd;
+	border-left: 1px solid @dark_blue3;
+	border-right: 1px solid @dark_blue3;
+	background-color: #ffffff;
+}
+
+#nav {
+	position: absolute;
+	top: 210px;
+	width: 100%;
+	height: 40px;
+	background-color: #39aecf;
+	border-top: 1px solid @dark_blue3;
+	font-size: 115%;
+}
+
+#nav ul, #nav li {
+	display: inline-block;
+}
+#nav ul {
+	position: relative;
+	left: 10%;
+	margin: 0;
+	padding: 0;
+	height: 30px;
+}
+
+@radius: 15px 15px 0 0;
+
+#nav li {
+	margin: 0;
+	padding: 10px 25px 0 25px;
+	border-right: 1px solid @light_orange5;
+	border-left: 1px solid @light_orange5;
+	height:30px;
+	border-radius: @radius;
+	box-shadow: 0 0 0 #fff;
+}
+#nav ul:first-child {
+	margin-left: 5px;
+}
+
+#nav a {
+	text-decoration: none;
+	color: @light_orange4;
+}
+#nav a:hover {
+	text-decoration: underline;
+	color: @light_orange5;
+}
+.current {
+	background-color: #ffffff;
+}
+#nav.current a:hover {
+	color: @light_orange4;
+}
+
+/* Page-specific styles */
+
+/* Portfolio */
+.snippet {
+	width: 80%;
+}
+
+.fancyBox {
+	padding: 0;
+}
+.fancyBox li {
+	list-style-type: none;
+	display: inline-block;
+}
+.fancyBox img {
+	vertical-align: middle;
+	padding: 0 20px;
+}
+
+/* Resume */
+.company {
+	margin-top: 10px;
+}
+
+.resume_section {
+	clear: right;
+	margin-bottom: 5px;
+	overflow: auto;
+}
+
+.resume_section h2 {
+	width: 15%;
+	clear: none;
+	display: inline-block;
+	text-align: right;
+	margin: -22px 0 0 0;
+}
+
+.resume_section h3 {
+	font-style: italic;
+	font-size: 1.05em;
+	font-family: Helvetica, Arial, sans-serif;
+}
+.resume_section .right {
+	padding-right: 6px;
+	margin: 0;
+	float: right;
+	width: 83%;
+}
+.resume_section p {
+	margin-bottom: 6px;
+}
+
+#skills p {
+	text-indent: 1em;
+}
+.position {
+	display: block;
+	font-style: italic;
+	padding-top: 6px;
+}
+.years {
+	float: right;
+	padding-right: 10px;
+}
+
+/* Race Tracker */
+#graph {
+	width: 80%;
+	margin: 1em auto;
+}
+label {
+	display: block;
+}
+input.time {
+	width: 2em;
+}
+.alternate_background {
+	background-color: @light_orange5;
+}

@@ -1,7 +1,7 @@
 <div id="body">
 	<p>Kate Green is seeking a full time web developer position in the Washington, DC area. To learn more, please visit my resume or download it here.</p>
 
-	<h2>Take my Resume</h2>	
+	<h2>Take my Resume With You</h2>	
 	<ul>
 		<li class="pdf"><a href="library/includes/green_resume.pdf">pdf</a></li>
 		<li class="txt"><a href="library/includes/green_resume.txt">txt</a></li>

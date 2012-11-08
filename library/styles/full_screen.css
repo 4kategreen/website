@@ -16,7 +16,7 @@ h1 {
 }
 h2 {
   font-size: 32px;
-  padding: 2.5% 0;
+  padding: 16px 0;
 }
 h3 {
   font-size: 24px;
@@ -37,7 +37,8 @@ a:hover {
   -moz-transition: all 0 ease;
   -o-transition: all 0 ease;
 }
-p {
+p,
+ul {
   padding: 0 0 2.5% 16px;
 }
 #pageWrapper {
@@ -114,6 +115,9 @@ p {
 .resume_section {
   padding-bottom: 16px;
 }
+.resume_section p:last-child {
+  padding-bottom: 0;
+}
 .company {
   font-weight: bold;
   font-size: 21.6px;
@@ -149,4 +153,13 @@ p {
   height: 36px;
   padding-left: 36px;
   vertical-align: middle;
+}
+.picture {
+  width: inherit;
+  height: 26.25%;
+}
+.kate {
+  background: url(../images/kate.jpg) left center no-repeat;
+  width: inherit;
+  height: 26.25%;
 }

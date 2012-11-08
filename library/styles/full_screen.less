@@ -8,6 +8,7 @@
 @dark_blue3: #08207f;
 @light_orange4: #fecb54;
 @light_orange5: #fedf98;
+@light-blue: #d7eef4;
 
 // Font Sizes
 @one-em: 16px; // Generally 16px
@@ -39,8 +40,12 @@ h1,h2,h3 {
 }
 
 h1 {
-	font-size: @one-em*2;
+	font-size: @one-em*2.5;
 	font-weight: normal;
+}
+h2 {
+	font-size: @one-em*2;
+
 }
 
 #pageWrapper {
@@ -51,10 +56,11 @@ h1 {
 
 #header {
 	height: @one-em*5;
+	background: @light-blue;
 }
 
 #nav {
-	margin: @one-em auto;
+	margin: 0 auto;
 	position: relative;
 }
 #nav li {
@@ -64,10 +70,11 @@ h1 {
 }
 
 #main {
+}
+#body {
 	float: left;
 	margin: 0 auto 6%;
 	width: @main-width; 
-	border: 1px solid #000;
 	padding: @half-gutter-width;
 }
 #main>article {
@@ -81,11 +88,24 @@ h1 {
 #sidebar {
 	float: right;
 	width: @sidebar-width;
-	border: 1px solid #000;
 	padding: @half-gutter-width;
 	overflow: hidden;
 }
 
 #footer {
 	clear: both;
+}
+
+/* Resume-specific */
+.resume_section {
+	padding-bottom: @one-em;
+}
+.company {
+
+}
+.years {
+
+}
+.position {
+
 }

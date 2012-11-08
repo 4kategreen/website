@@ -1,8 +1,3 @@
-<?php 
-	$page = 'running';
-	include('templates/header.inc'); 
-?>
-
 <h2>Speed Pilot Program</h2>
 
 <h3>Goal Pace and Workout Paces</h3>
@@ -10,5 +5,3 @@
 
 <h3>Race Information</h3>
 <p>The target race is the Women's Distance Festival/Men Run after the Women 5K in Annapolis on July 14. The registration link will be posted here and I'll let you know when I see it.</p>
-
-<?php include('templates/footer.inc'); ?>

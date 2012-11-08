@@ -59,23 +59,12 @@
 	<div id="nav">
 		<ul id="mainTabs">
 			<li id="home"><a href="main.php">Home</a></li>
-			<li id="running"><a href="#running_subrow">Running</a></li>
+			<li id="running"><a href="running.php">Running</a></li>
 			<li id="resume"><a href="resume.php">Resume</a></li>
 		</ul>
-
-		<div id="subRows">
-			<ul id="running_subrow">
-				<li id-"running_about"><a href="running.php">About</a></li>
-				<li id="race_tracker"><a href="running/race_tracker.php">Race Tracker</a></li>
-			</ul>
-		</div>
 	</div>
 
 	<div id="main">
-	</div>
-
-	<div id="sidebar">
-		<h2>Sidebar</h2>
 	</div>
 	
 	<div id="footer"></div>

@@ -1,24 +1,7 @@
+<div id="body">
   <div id="summary" class="resume_section">
     <h2>Summary</h2>
     <p>Over ten years of experience in web design and development. Have worked on all aspects in the development of intelligent, intuitive, and responsive web sites with a focus on delivering a robust and quality product. Has a proven track record of quickly learning and mastering new development methodologies and has successfully implemented them for clients.  </p>
-  </div>
-
-  <div id="skills" class="resume_section">
-    <h2>Skills</h2>
-    <ul>
-      <li>PHP</li>
-      <li>HTML(5)</li>
-      <li>CSS3, LESS</li>
-      <li>jQuery, javascript</li>
-      <li>SQL</li>
-      <li>Git</li>
-      <li>SVN</li>
-      <li>MVC</li>
-      <li>Photoshop</li>
-      <li>Illustrator</li>
-      <li>Apache</li>
-      <li>Drupal</li>
-    </ul>
   </div>
   
   <div id="experience" class="resume_section">
@@ -57,3 +40,23 @@
       <a href="portfolio/green_resume.pdf"><img src="library/images/pdf-imate.png" title="Download a pdf version" /></a>
     </div>
   </div>
+</div>
+
+<div id="sidebar">
+    <h2>Skills</h2>
+    <ul>
+      <li>PHP</li>
+      <li>HTML(5)</li>
+      <li>CSS3, LESS</li>
+      <li>jQuery, javascript</li>
+      <li>SQL</li>
+      <li>Git</li>
+      <li>SVN</li>
+      <li>MVC</li>
+      <li>Photoshop</li>
+      <li>Illustrator</li>
+      <li>Apache</li>
+      <li>Drupal</li>
+    </ul>
+  </div>
+</div>

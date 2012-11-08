@@ -10,8 +10,11 @@ h3 {
   font-family: 'Simonetta', serif;
 }
 h1 {
-  font-size: 32px;
+  font-size: 40px;
   font-weight: normal;
+}
+h2 {
+  font-size: 32px;
 }
 #pageWrapper {
   margin: 48px auto;
@@ -20,9 +23,10 @@ h1 {
 }
 #header {
   height: 80px;
+  background: #d7eef4;
 }
 #nav {
-  margin: 16px auto;
+  margin: 0 auto;
   position: relative;
 }
 #nav li {
@@ -30,11 +34,10 @@ h1 {
   width: 19.375%;
   margin: 0 2.5%;
 }
-#main {
+#body {
   float: left;
   margin: 0 auto 6%;
   width: 57.1875%;
-  border: 1px solid #000;
   padding: 2.5%;
 }
 #main>article {
@@ -47,10 +50,12 @@ h1 {
 #sidebar {
   float: right;
   width: 26.25%;
-  border: 1px solid #000;
   padding: 2.5%;
   overflow: hidden;
 }
 #footer {
   clear: both;
+}
+.resume_section {
+  padding-bottom: 16px;
 }

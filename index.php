@@ -59,8 +59,8 @@
 	<div id="nav">
 		<ul id="mainTabs">
 			<li id="home"><a href="main.php">Home</a></li>
-			<li id="running"><a href="running.php">Running</a></li>
 			<li id="resume"><a href="resume.php">Resume</a></li>
+			<li id="running"><a href="running.php">Running</a></li>
 		</ul>
 	</div>
 

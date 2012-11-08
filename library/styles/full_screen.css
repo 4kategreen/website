@@ -10,11 +10,27 @@ h3 {
   font-family: 'Simonetta', serif;
 }
 h1 {
-  font-size: 40px;
+  font-size: 80px;
   font-weight: normal;
 }
 h2 {
   font-size: 32px;
+}
+a {
+  color: #fcc000;
+}
+a:hover {
+  color: #c99900;
+  transition: all .25s ease;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -o-transition: all .25s ease;
+}
+.zTabs a:hover {
+  transition: all 0 ease;
+  -webkit-transition: all 0 ease;
+  -moz-transition: all 0 ease;
+  -o-transition: all 0 ease;
 }
 #pageWrapper {
   margin: 48px auto;
@@ -22,17 +38,21 @@ h2 {
   background: #fff;
 }
 #header {
-  height: 80px;
+  height: 112px;
   background: #d7eef4;
 }
 #nav {
-  margin: 0 auto;
+  margin: 0 auto 16px auto;
   position: relative;
 }
 #nav li {
   display: inline-block;
   width: 19.375%;
   margin: 0 2.5%;
+}
+#main {
+  padding: 0 16px;
+  min-height: 600px;
 }
 #body {
   float: left;
@@ -56,6 +76,56 @@ h2 {
 #footer {
   clear: both;
 }
+.button {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 5px;
+  font-size: 100%;
+  background: #87cbde;
+  color: #ffffff;
+  border: 2px solid #d7eef4;
+  box-shadow: 1px 1px 3px #dddddd;
+  -webkit-box-shadow: 1px 1px 3px #dddddd;
+  -moz-box-shadow: 1px 1px 3px #dddddd;
+  border-radius: 10px 10px;
+  -moz-border-radius: 10px 10px;
+  -webkit-border-radius: 10px 10px;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  cursor: pointer;
+}
+.button a {
+  color: #ffffff;
+}
+.button:hover {
+  background: #5fbad3;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
 .resume_section {
   padding-bottom: 16px;
+}
+.download-file {
+  display: inline-block;
+  height: 36px;
+  padding-left: 36px;
+  vertical-align: middle;
+}
+.pdf {
+  background: url(../images/pdf-imate.png) left center no-repeat;
+  display: inline-block;
+  height: 36px;
+  padding-left: 36px;
+  vertical-align: middle;
+}
+.txt {
+  background: url(../images/text-doc.png) left center no-repeat;
+  display: inline-block;
+  height: 36px;
+  padding-left: 36px;
+  vertical-align: middle;
 }

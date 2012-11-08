@@ -37,6 +37,7 @@
   -webkit-box-shadow: @arguments;
   -moz-box-shadow: @arguments;
 }
+.inset-box-shad
 .border-radius(@x=10px,@y=10px) {
   border-radius: @x @y;
   -moz-border-radius: @x @y;
@@ -65,12 +66,18 @@ h1,h2,h3 {
 }
 
 h1 {
-	font-size: @one-em*5;
+	font-size: @one-em*6;
 	font-weight: normal;
+	text-align: center;
 }
 h2 {
 	font-size: @one-em*2;
+	padding: @half-gutter-width 0;
 }
+h3 {
+	font-size: @one-em*1.5;
+}
+
 a {
 	color: @gold;
 }
@@ -81,6 +88,9 @@ a:hover {
 .zTabs a:hover {
 	.transition(0);
 }
+p {
+	padding: 0 0 @half-gutter-width @one-em;
+}
 
 #pageWrapper {
 	margin: @gutter-px auto;
@@ -89,7 +99,7 @@ a:hover {
 }
 
 #header {
-	height: @one-em*7;
+	height: @one-em*8;
 	background: @light-blue;
 }
 
@@ -159,13 +169,20 @@ a:hover {
 	padding-bottom: @one-em;
 }
 .company {
-
+	font-weight: bold;
+	font-size: @one-em*1.35;
+}
+.location {
+	font-size: @one-em*.75;
+	font-style: italic;
+	padding-bottom: @half-gutter-width/2;
 }
 .years {
-
+	float: right;
+	font-weight: normal;
 }
 .position {
-
+	font-weight: bold;
 }
 .download-file {
 	display: inline-block;

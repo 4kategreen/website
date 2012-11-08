@@ -10,11 +10,16 @@ h3 {
   font-family: 'Simonetta', serif;
 }
 h1 {
-  font-size: 80px;
+  font-size: 96px;
   font-weight: normal;
+  text-align: center;
 }
 h2 {
   font-size: 32px;
+  padding: 2.5% 0;
+}
+h3 {
+  font-size: 24px;
 }
 a {
   color: #fcc000;
@@ -32,13 +37,16 @@ a:hover {
   -moz-transition: all 0 ease;
   -o-transition: all 0 ease;
 }
+p {
+  padding: 0 0 2.5% 16px;
+}
 #pageWrapper {
   margin: 48px auto;
   width: 90%;
   background: #fff;
 }
 #header {
-  height: 112px;
+  height: 128px;
   background: #d7eef4;
 }
 #nav {
@@ -87,9 +95,6 @@ a:hover {
   box-shadow: 1px 1px 3px #dddddd;
   -webkit-box-shadow: 1px 1px 3px #dddddd;
   -moz-box-shadow: 1px 1px 3px #dddddd;
-  border-radius: 10px 10px;
-  -moz-border-radius: 10px 10px;
-  -webkit-border-radius: 10px 10px;
   transition: all 1s ease;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -108,6 +113,22 @@ a:hover {
 }
 .resume_section {
   padding-bottom: 16px;
+}
+.company {
+  font-weight: bold;
+  font-size: 21.6px;
+}
+.location {
+  font-size: 12px;
+  font-style: italic;
+  padding-bottom: 1.25%;
+}
+.years {
+  float: right;
+  font-weight: normal;
+}
+.position {
+  font-weight: bold;
 }
 .download-file {
   display: inline-block;

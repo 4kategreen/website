@@ -49,11 +49,7 @@
 
 <div id="pageWrapper">
 	<div id="header">
-		<div id="signature"></div>
 		<h1>Kathryn Green</h1>
-		<div id="contact_info">
-			<div class="email"><a href="mailto:kate@kategreen.us">kate@kategreen.us</a></div>
-		</div>
 	</div>
 	
 	<div id="nav">

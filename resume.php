@@ -46,9 +46,9 @@
   
   <div id="download" class="resume_section">
     <h2>Download</h2> 
-    <div class="right">
-      <a href="portfolio/green_resume.pdf"><img src="library/images/pdf-imate.png" title="Download a pdf version" /></a>
-    </div>
+    <ul>
+      <li style="display:inline-block;"><a href="library/includes/green_resume.pdf"><img src="library/images/pdf-imate.png" title="Download a pdf version" /></a></li>
+      <li style="display:inline-block;"><a href="library/includes/green_resume.txt"><img src="library/images/text-doc.png" title="Download a txt version" /></a></li>
   </div>
 </div>
 

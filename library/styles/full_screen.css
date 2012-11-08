@@ -155,11 +155,11 @@ ul {
   vertical-align: middle;
 }
 .picture {
-  width: inherit;
-  height: 26.25%;
+  background-size: 100%;
+  padding-top: 105%;
 }
 .kate {
-  background: url(../images/kate.jpg) left center no-repeat;
-  width: inherit;
-  height: 26.25%;
+  background: url(../images/kate.jpg) center top no-repeat;
+  background-size: 100%;
+  padding-top: 105%;
 }

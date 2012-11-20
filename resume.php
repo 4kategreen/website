@@ -68,6 +68,7 @@
         <li>Git</li>
         <li>SVN</li>
         <li>MVC</li>
+        <li>JSON</li>
         <li>Photoshop</li>
         <li>Illustrator</li>
         <li>Apache</li>

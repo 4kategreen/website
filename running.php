@@ -1,7 +1,23 @@
-<h2>Speed Pilot Program</h2>
+<div id="body">
 
-<h3>Goal Pace and Workout Paces</h3>
-<p>Here are the workout documents. In order to determine paces, go to the <a href="http://www.mcmillanrunning.com/calculator">McMillan Running Calculator</a> and enter the time for your most recent race. For many of you, this will be the mile time trial on 5/15, but any recent race will do. If you don't have one, try to estimate.</p>
+</div>
 
-<h3>Race Information</h3>
-<p>The target race is the Women's Distance Festival/Men Run after the Women 5K in Annapolis on July 14. The registration link will be posted here and I'll let you know when I see it.</p>
+<div id="sidebar">
+	<h2>RRCA Certified Running Coach</h2>
+	<h2>Personal Records</h2>
+	<ul>
+		<li><b>mile</b>: 7:45 (2012)</li>
+		<li><b>5K</b>: 25:46 (2012)</li>
+		<li><b>10K</b>: 58:24 (2011)</li>
+		<li><b>10 miles</b>: 87:26 (2012)</li>
+		<li><b>half marathon</b>: 2:00:16 (2012)</li>
+	</ul>
+	<h2>Favorite Running Resources</h2>
+	<ul>
+		<li>Run Faster by Brad Hudson</li>
+		<li>Daniels Running Formula by Jack Daniels</li>
+		<li>Strength Running</li>
+		<li>Runblogger</li>
+		<li>DC Rainmaker</li>
+	</ul>
+</div>

@@ -22,10 +22,11 @@
 <!--[if IE 7]><link rel="stylesheet" href="<?php echo $zTabs; ?>/<?php echo $styles; ?>/zTabsIE7.css" type="text/css" media="screen"><![endif]-->
 <!--[if lte IE 6]> <link rel='stylesheet' rev='stylesheet' href='<?php echo $zTabs; ?>/<?php echo $styles; ?>/zTabsIE6.css' type='text/css' charset="utf-8" media='screen' /> <![endif]-->
 	
-	<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 	<script src="http://code.jquery.com/ui/1.9.0/jquery-ui.min.js"></script>
 	<script src="<?php echo $js; ?>/jquery.snippet.min.js"></script>
 	<script src="<?php echo $zTabs; ?>/<?php echo $js; ?>/jquery.ztabs.js"></script>
+	<script src="library/javascript/racetracker/jquery.racetracker.js"></script>
 	
 	<script>
 		$(document).ready(function() {
@@ -57,6 +58,7 @@
 			<li id="home"><a href="main.php">Home</a></li>
 			<li id="resume"><a href="resume.php">Resume</a></li>
 			<li id="running"><a href="running.php">Running</a></li>
+			<!--<li id="race_tracker"><a href="running/race_tracker.php">-->Race Tracker</a></li>
 		</ul>
 	</div>
 

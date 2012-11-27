@@ -1,5 +1,5 @@
 <div id="body">
-	<p>Kate Green is seeking a full time web developer position in the Washington, DC area. To learn more, please visit my resume or download it here.</p>
+	<p>Kate Green is seeking a full time web application developer position in the Washington, DC area. To learn more, please visit my resume or download it here.</p>
 
 	<h2>Take my Resume With You</h2>	
 	<ul>

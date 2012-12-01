@@ -1,15 +1,20 @@
 <?php
-	$page = 'running';
-	include('../templates/header.inc'); 
+	require('../library/includes/lessc.inc.php');
+	$less = new lessc();
+	try {
+		$less->checkedCompile('../library/javascript/racetracker/racetracker.less','../library/javascript/racetracker/racetracker.css');
+	} catch (exception $e) {
+  echo "fatal error: " . $e->getMessage();
+}
 ?>
-<div class="less-error-message">
-</div>
-<!--[if lt IE 9]><script language="javascript" src="../javascript/excanvas.js"></script><![endif]-->
-<script src="../javascript/jquery.jqplot.min.js"></script>
-<script src="../javascript/jqplot.dateAxisRenderer.min.js"></script>
-<script src="../javascript/jqplot.cursor.min.js"></script>
-<script src="../javascript/jqplot.highlighter.min.js"></script>
-<script src="../javascript/race_tracker.js"></script>
+<link rel="stylesheet" href="library/javascript/racetracker/racetracker.css" />
+<!--[if lt IE 9]><script language="javascript" src="library/javascript/excanvas.js"></script><![endif]-->
+<script src="library/javascript/jquery.jqplot.min.js"></script>
+<script src="library/javascript/jqplot.dateAxisRenderer.min.js"></script>
+<script src="library/javascript/jqplot.cursor.min.js"></script>
+<script src="library/javascript/jqplot.highlighter.min.js"></script>
+<!-- <script src="library/javascript/racetracker/jquery.racetracker.js"></script> -->
+<script src="library/javascript/race_tracker.js"></script>
 <script>
 	$(document).ready(function() {
 		$race_row = $('tr.race#1').clone();
@@ -29,48 +34,50 @@
 			return false;
 		});
 
-		var data=[['2012-06-23 12:00PM',26.27],['2012-06-30 12:00PM',25.25],['2012-07-14 12:00PM',25.21]];
-		$.jqplot('graph',  [data], {
-			axes:{xaxis:{renderer:$.jqplot.DateAxisRenderer}}
+		$('#racetracker').racetracker();
+		$('#graph').click(function() {
+			$('#racetracker').racetracker('graph');
+			return false;
 		});
 	});
 </script>
 
 <h2>Race Results</h2>
-<div id="graph"></div>
+<div id="racetracker"></div>
 
 <h2>Add Races</h2>
-<div id="race_tracker">
+<div id="raceform">
 	<form method="post" name="race_data" id="race_data" action="">
 		<table>
 			<thead>
 				<tr>
 					<th></th>
+					<th>Race Name</th>
 					<th>Date</th>
 					<th>Finish Time (hh:mm:ss)</th>
 					<th>Distance (miles)</th>
-					<th></th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr class="race" id="1">
 					<td>
-						<span class="remove">O</span>
-						<input type="checkbox" name="display" id="display" />
+						<span class="remove">X</span>
+						<input type="checkbox" name="display" class="display" />
 					</td>
-					<td><input type="text" name="date" id="date" placeholder="Race Date" /></td>
 					<td>
-						<input type="text" name="hours" id="hours" class="time" placeholder="hh" />:
-						<input type="text" name="minutes" id="minutes" class="time" placeholder="mm" />:
-						<input type="text" name="seconds" id="seconds" class="time" placeholder="ss" />
+						<input type="text" name="name" class="name" placeholder="Race Name" />
 					</td>
-					<td><input type="text" name="distance" id="distance" placeholder="Distance (in miles)" /></td>
-					<td><button class="add">Add</button></td>
+					<td><input type="text" name="date" class="date" placeholder="Race Date" /></td>
+					<td>
+						<input type="text" name="hours" class="hours" class="time" placeholder="hh" />:
+						<input type="text" name="minutes" class="minutes" class="time" placeholder="mm" />:
+						<input type="text" name="seconds" class="seconds" class="time" placeholder="ss" />
+					</td>
+					<td><input type="text" name="distance" class="distance" placeholder="Distance (in miles)" /></td>
 				</tr>
 			</tbody>
 		</table>
+		<button id="graph">Graph</button>
 		<button id="add_race">Add Another Race</button>
 	</form>
 </div>
-
-<?php include('../templates/footer.inc'); ?>

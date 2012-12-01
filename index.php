@@ -6,8 +6,22 @@
 	
 	require('library/includes/lessc.inc.php');
 	$less = new lessc();
-	$less->checkedCompile($styles.'/full_screen.less',$styles.'/full_screen.css');
-	$less->checkedCompile($zTabs.'/'.$styles.'/zTabs.less',$zTabs.'/'.$styles.'/zTabs.css');
+	// Setting higher level variables
+	$less->setVariables(Array(
+		'one-em' => '16px',
+		'light-blue' => '#d7eef4',
+		'full-width' => '90%'
+	));
+	try {
+		$less->checkedCompile($styles.'/full_screen.less',$styles.'/full_screen.css');
+	} catch (Exception $e) {
+		echo $e;
+	}
+	try {
+		$less->checkedCompile($zTabs.'/'.$styles.'/zTabs.less',$zTabs.'/'.$styles.'/zTabs.css');
+	} catch (Exception $e) {
+		echo $e;
+	}
 ?>
 <!DOCTYPE html>
 <html>
@@ -58,7 +72,7 @@
 			<li id="home"><a href="main.php">Home</a></li>
 			<li id="resume"><a href="resume.php">Resume</a></li>
 			<li id="running"><a href="running.php">Running</a></li>
-			<!--<li id="race_tracker"><a href="running/race_tracker.php">-->Race Tracker</a></li>
+			<li id="race_tracker"><a href="running/race_tracker.php">Race Tracker</a></li>
 		</ul>
 	</div>
 

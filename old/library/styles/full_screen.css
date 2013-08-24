@@ -1,0 +1,165 @@
+body {
+  font: normal 16px Helvetica, Arial, sans-serif;
+  background: #eee;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Simonetta', serif;
+}
+h1 {
+  font-size: 96px;
+  font-weight: normal;
+  text-align: center;
+}
+h2 {
+  font-size: 32px;
+  padding: 16px 0;
+}
+h3 {
+  font-size: 24px;
+}
+a {
+  color: #fcc000;
+}
+a:hover {
+  color: #c99900;
+  transition: all .25s ease;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -o-transition: all .25s ease;
+}
+.zTabs a:hover {
+  transition: all 0 ease;
+  -webkit-transition: all 0 ease;
+  -moz-transition: all 0 ease;
+  -o-transition: all 0 ease;
+}
+p,
+ul {
+  padding: 0 0 2.5% 16px;
+}
+#pageWrapper {
+  margin: 48px auto;
+  width: 90%;
+  background: #fff;
+}
+#header {
+  height: 128px;
+  background: #d7eef4;
+}
+#nav {
+  margin: 0 auto 16px auto;
+  position: relative;
+}
+#nav li {
+  display: inline-block;
+  width: 19.375%;
+  margin: 0 2.5%;
+}
+#main {
+  padding: 0 16px;
+  min-height: 600px;
+}
+#body {
+  float: left;
+  margin: 0 auto 6%;
+  width: 57.1875%;
+  padding: 2.5%;
+}
+#main>article {
+  padding: 0.8em 5%;
+  margin: 0 auto;
+}
+.section {
+  padding: 0 7.1875%;
+}
+#sidebar {
+  float: right;
+  width: 26.25%;
+  padding: 2.5%;
+  overflow: hidden;
+}
+#footer {
+  clear: both;
+}
+.button {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 5px;
+  font-size: 100%;
+  background: #87cbde;
+  color: #ffffff;
+  border: 2px solid #d7eef4;
+  box-shadow: 1px 1px 3px #dddddd;
+  -webkit-box-shadow: 1px 1px 3px #dddddd;
+  -moz-box-shadow: 1px 1px 3px #dddddd;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  cursor: pointer;
+}
+.button a {
+  color: #ffffff;
+}
+.button:hover {
+  background: #5fbad3;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+.resume_section {
+  padding-bottom: 16px;
+}
+.resume_section p:last-child {
+  padding-bottom: 0;
+}
+.company {
+  font-weight: bold;
+  font-size: 21.6px;
+}
+.location {
+  font-size: 12px;
+  font-style: italic;
+  padding-bottom: 1.25%;
+}
+.years {
+  float: right;
+  font-weight: normal;
+}
+.position {
+  font-weight: bold;
+}
+.download-file {
+  display: inline-block;
+  height: 36px;
+  padding-left: 36px;
+  vertical-align: middle;
+}
+.pdf {
+  background: url(../images/pdf-imate.png) left center no-repeat;
+  display: inline-block;
+  height: 36px;
+  padding-left: 36px;
+  vertical-align: middle;
+}
+.txt {
+  background: url(../images/text-doc.png) left center no-repeat;
+  display: inline-block;
+  height: 36px;
+  padding-left: 36px;
+  vertical-align: middle;
+}
+.picture {
+  background-size: 100%;
+  padding-top: 105%;
+}
+.kate {
+  background: url(../images/kate.jpg) center top no-repeat;
+  background-size: 100%;
+  padding-top: 105%;
+}

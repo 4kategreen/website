@@ -1,0 +1,49 @@
+Kathryn Green
+Web Application Developer
+
+Summary
+Over ten years of experience in web design and development. Have worked on all aspects in the development of intelligent, intuitive, and responsive web sites with a focus on delivering a robust and quality product. Has a proven track record of quickly learning and mastering new development methodologies and has successfully implemented them for clients.
+
+Samples
+github.com/4kategreen
+kategreen.us
+
+Skills
+HTML(5)
+CSS3, LESS
+PHP
+jQuery, javascript
+SQL
+MVC
+Git
+SVN
+Apache
+JSON
+Photoshop
+Illustrator
+Drupal
+
+Experience
+
+Palladian Partners, Silver Spring, MD (2012-present)
+Web Developer
+Designs and builds front end interfaces using LESS, CCS3, jQuery and HTML. Supports PHP publication repository with testing, user interface improvements and code refactoring. Supports the team as version control lead and advocates for advanced development practices while still maintaining accessibility and a large static content base.
+
+ITT Exelis, Alexandria, VA
+Multiple Positions at the Naval Research Laboratory (NRL), Washington, DC (1999-2012)
+Web Developer and Designer (2008-2012)
+After joining a large-scale visitor registration project following its first release, quickly learned the application, started to improve and document existing code. Doubled the application’s capabilities by creating a module to register contractors with expired yearly credentials. This led to becoming the lead developer within a year. Was able to direct the team to manage existing code, start another large code improvement effort and add another large component that manages all aspects of large scale meetings.
+Responsible for the creation of multiple applications at NRL. Supported the entire development process by gathering requirements, researching user needs, creating design comps, validating them with the client,  developing the application, testing and releasing to production. Used MVC techniques during development while focusing on data integrity, and trying to ensure a positive user experience. Examples of these applications are: a facility meeting scheduler that allows for online reservations and includes management approval options; a publication management system that stores publications for website display; and a file repository which collects data from subjects via automatic and manual file uploads.
+Redesigned templates used for basic websites scientists and researchers use to publicize and offer their publications for sale. These templates were created to support both Drupal and an older, homegrown content management system. The new templates were designed to ensure section 508 compliance, instituted simple, clean page design and best practice standards-compliance.
+
+Web Designer (2005-2008)
+Created websites for researchers and scientists at the Naval Research Laboratory using standards-compliant HTML, CSS and ensured section 508 compliance. Met with and determined the needs of each client, gathered content and publications, edited and transformed content for a less specialized audience, designed or edited graphics and photographs, reviewed the websites with the clients and created website approval packages as required by the Laboratory.
+
+Graphic Designer (2005-2008)
+In addition to creating websites, created large posters of scientist work from technical papers. Read a paper’s content, designed posters and other print displays using Adobe Illustrator, printed on a large plotter, then cut and sometimes framed the documents. These posters were used by scientists for presentations, office and hallway displays and conferences.
+
+Intern, Web Designer, Visual Basic Programmer (1999-2005)
+Hired as an intern while still a student. Worked in a department support role while finishing college, starting with administrative tasks such as filing, collecting and entering time cards, and running monthly reports. Rose to designing websites and database applications to aid the administrative tasks of the department. Gained a great appreciation for information architecture and user experience, the advantages of proper automation of tasks, and a firm grasp on data integrity through database normalization. Examples of applications created are: an employee survey application and a purchase tracking system that generated reconciliations and monthly reports.
+
+Education
+University of Maryland, College Park, May 2002. Bachelor of Science in Elementary Education, Mathematics focus

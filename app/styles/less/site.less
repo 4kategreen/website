@@ -1,0 +1,40 @@
+@import url('bootstrap.less');
+
+@font-family-title: 'Berkshire Swash', cursive;
+
+@headings-font-family: @font-family-title;
+
+.header {
+	.make-row();
+}
+
+.title {
+	font-size: @font-size-base * 5;
+	.make-sm-column-offset(1);
+
+	@media (max-width: @screen-xs) {
+		font-size: @font-size-base * 3;
+	}
+}
+
+.navbar {
+	.navbar-default; 
+}
+.nav {
+	.navbar-nav;
+	.nav-justified;
+
+	li {
+		.text-center;
+	}
+}
+
+.content {
+	.make-row();
+}
+.main {
+	.make-sm-column(8);
+}
+.rail {
+	.make-sm-column(4);
+}

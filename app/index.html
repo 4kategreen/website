@@ -8,10 +8,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title></title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <!-- build:css styles/site.min.css -->
+    <link rel="stylesheet" href="styles/site.css">
+    <link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
     <!-- endbuild -->
   </head>
   <body ng-app="kategreen">
@@ -25,7 +26,33 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-view></div>
+    <div class="container">
+      <header>
+        <h1 class="title">
+          kate green
+        </h1>
+      </header>
+      <nav class="navbar" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="nav">
+            <li>portfolio</li>
+            <li>resume</li>
+            <li>ideas</li>
+            <li>stuff</li>
+          </ul>
+        </div>
+      </nav>
+      <div class="content" ng-view></div>
+    </div>
 
     <script src="components/angular/angular.js"></script>
 

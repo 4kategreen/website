@@ -11,6 +11,10 @@ angular.module('kategreenApp', ['ngRoute','firebase'])
         templateUrl: 'views/blog.html',
         controller: 'BlogCtrl'
       })
+      .when('/admin/add', {
+        templateUrl: 'views/admin/add.html',
+        controller: 'BlogAdminCtrl'
+      })
       .when('/resume', {
         templateUrl: 'views/resume.html',
         controller: 'ResumeCtrl'

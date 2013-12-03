@@ -1,0 +1,26 @@
+<h2>Add a Post</h2>
+<form ng-submit="submit()">
+	<div class="formGroup">
+		<label for="title">Title</label>
+		<input id="title" type="text" ng-model="post.title" placeholder="Title" />
+	</div>
+
+	<div class="formGroup">
+		<label for="content">Content</label>
+		<textarea id="content" ng-model="post.content" class="form-control" rows="8"></textarea>
+	</div>
+
+	<div class="checkbox">
+		<label ng-repeat="tag in tags" class="checkbox-inline">
+			<input type="checkbox" id="{{tag}}" value="{{tag}}">{{tag}}
+		</label>
+	</div>
+
+	<div class="checkbox">
+		<label>
+			<input type="checkbox" ng-model="post.published" value="">Publish
+		</label>
+	</div>
+
+	<button type="submit" class="btn btn-primary">Add Post</button>
+</form>

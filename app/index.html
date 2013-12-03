@@ -29,29 +29,41 @@
 
     <!-- Add your site or application content here -->
     <div class="body-container">
-      <header class="container">
-        <h1 class="title">
-          kate green
-        </h1>
-      </header>
-      <nav class="navbar" role="navigation" ng-controller="TabsCtrl">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+      <div class="container">
+        <header>
+          <h1 class="title">
+            kate green
+          </h1>
+        </header>
+        <nav class="navbar" role="navigation" ng-controller="TabsCtrl">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="nav">
+            <ul class="nav">
+              <li ng-repeat="tab in tabs" heading="{{tab.title}}" ng-class="getClass(tab.route)"><a ng-href="#{{tab.route}}">{{tab.title}}</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="content">
+          <div class="main" ng-view></div>
+          <div class="rail">
+            <h3>Stuff</h3>
+          </div>
         </div>
 
-        <div class="collapse navbar-collapse" id="nav">
-          <ul class="nav">
-            <li ng-repeat="tab in tabs" heading="{{tab.title}}" ng-class="getClass(tab.route)"><a ng-href="#{{tab.route}}">{{tab.title}}</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="container">  
-        <div class="content" ng-view></div>
+        <footer>
+          <div class="footer">
+            <p class="text-muted">Something</p>
+          </div>
+        </footer>
       </div>
     </div>
 
@@ -60,7 +72,6 @@
     <script src="https://cdn.firebase.com/v0/firebase.js"></script>
     <script src="components/angular-fire/angularfire.min.js"></script>
     <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 
     <!-- build:js scripts/scripts.js -->
     <script src="scripts/app.js"></script>

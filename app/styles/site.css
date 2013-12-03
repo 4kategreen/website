@@ -6020,31 +6020,49 @@ td.visible-print {
   background-color: #eeeeee;
 }
 header,
-.content {
+nav,
+.content,
+footer {
   background-color: #fff;
-}
-.header {
   margin-left: -15px;
   margin-right: -15px;
 }
-.header:before,
-.header:after {
+header:before,
+nav:before,
+.content:before,
+footer:before,
+header:after,
+nav:after,
+.content:after,
+footer:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
-.header:after {
+header:after,
+nav:after,
+.content:after,
+footer:after {
   clear: both;
 }
-.header:before,
-.header:after {
+header:before,
+nav:before,
+.content:before,
+footer:before,
+header:after,
+nav:after,
+.content:after,
+footer:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
-.header:after {
+header:after,
+nav:after,
+.content:after,
+footer:after {
   clear: both;
 }
 .title {
@@ -6261,30 +6279,6 @@ header,
     transform: rotate(-5deg);
   }
 }
-.content {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-.content:before,
-.content:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-.content:after {
-  clear: both;
-}
-.content:before,
-.content:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-.content:after {
-  clear: both;
-}
 .main {
   position: relative;
   min-height: 1px;
@@ -6307,5 +6301,17 @@ header,
   .rail {
     float: left;
     width: 33.33333333333333%;
+  }
+}
+.footer {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .footer {
+    float: left;
+    width: 100%;
   }
 }

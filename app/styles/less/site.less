@@ -43,13 +43,11 @@
 .body-container {
 	background-color: @gray-lighter;
 }
-header, .content {
+header, nav, .content, footer {
 	background-color: #fff;
-}
-
-.header {
 	.make-row();
 }
+
 
 .title {
 	.make-sm-column-offset(1);
@@ -88,12 +86,13 @@ header, .content {
 	}	
 }
 
-.content {
-	.make-row();
-}
 .main {
 	.make-sm-column(8);
 }
 .rail {
 	.make-sm-column(4);
+}
+
+.footer {
+	.make-sm-column(12);
 }

@@ -1,16 +1,59 @@
 @import url('bootstrap.less');
 
+/*
+	Variables
+	===
+*/
 @font-family-title: 'Berkshire Swash', cursive;
 
+@brand-primary: rgba(48,53,132,1);
+@brand-info: rgba(0,166,81,1);
+
 @headings-font-family: @font-family-title;
+@headings-color: @brand-primary;
+
+// Navbar links
+@nav-link-hover-bg: transparent;
+
+@border-info: 4px solid @brand-info;
+
+
+/*
+	Mixins
+	===
+
+	Navbar Dots
+	---
+*/
+.dots {
+	&:before, &:after {
+		content: ' • ';
+	}
+
+	@media (min-width: @screen-sm) {
+		.rotate(-5deg);
+	}
+}
+
+
+/*
+	Styles
+	===
+*/
+.body-container {
+	background-color: @gray-lighter;
+}
+header, .content {
+	background-color: #fff;
+}
 
 .header {
 	.make-row();
 }
 
 .title {
-	font-size: @font-size-base * 5;
 	.make-sm-column-offset(1);
+	font-size: @font-size-base * 5;
 
 	@media (max-width: @screen-xs) {
 		font-size: @font-size-base * 3;
@@ -18,15 +61,31 @@
 }
 
 .navbar {
-	.navbar-default; 
+	.navbar-default;
+	background-color: #fff; // override
+	border: 0; // override
+	border-top: @border-info;
+	border-bottom: @border-info;
+	margin-bottom: 0; // override
 }
 .nav {
 	.navbar-nav;
 	.nav-justified;
 
-	li {
-		.text-center;
+	li a {
+		border: 0;
+
+		&:hover, &:focus {
+			.dots;
+		}
 	}
+
+	a { cursor: pointer; }
+
+	.active>a {
+		.dots;
+		color: @brand-info;
+	}	
 }
 
 .content {

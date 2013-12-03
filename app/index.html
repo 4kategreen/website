@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="styles/site.css">
     <link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
     <!-- endbuild -->
+
+    <script src="components/jquery/jquery.min.js"></script>
   </head>
   <body ng-app="kategreen">
     <!--[if lt IE 7]>
@@ -26,13 +28,13 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container">
-      <header>
+    <div class="body-container">
+      <header class="container">
         <h1 class="title">
           kate green
         </h1>
       </header>
-      <nav class="navbar" role="navigation">
+      <nav class="navbar" role="navigation" ng-controller="TabsCtrl">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
             <span class="sr-only">Toggle navigation</span>
@@ -44,21 +46,29 @@
 
         <div class="collapse navbar-collapse" id="nav">
           <ul class="nav">
-            <li>portfolio</li>
-            <li>resume</li>
-            <li>ideas</li>
-            <li>stuff</li>
+            <li ng-repeat="tab in tabs" heading="{{tab.title}}" ng-class="getClass(tab.route)"><a ng-href="#{{tab.route}}">{{tab.title}}</a></li>
           </ul>
         </div>
       </nav>
-      <div class="content" ng-view></div>
+      <div class="container">  
+        <div class="content" ng-view></div>
+      </div>
     </div>
 
     <script src="components/angular/angular.js"></script>
+    <script src="components/angular-route/angular-route.min.js"></script>
+    <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+    <script src="components/angular-fire/angularfire.min.js"></script>
+    <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 
     <!-- build:js scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/blog.js"></script>
+    <script src="scripts/controllers/tabs.js"></script>
+    <script src="scripts/controllers/resume.js"></script>
+    <script src="scripts/controllers/portfolio.js"></script>
     <!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

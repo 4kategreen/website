@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('kategreen')
+angular.module('kategreenApp')
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',

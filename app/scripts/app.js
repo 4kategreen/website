@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('kategreen', ['ngRoute','firebase'])
+angular.module('kategreenApp', ['ngRoute','firebase'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {

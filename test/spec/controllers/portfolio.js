@@ -3,7 +3,7 @@
 describe('Controller: PortfolioCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('kategreen'));
+  beforeEach(module('kategreenApp'));
 
   var PortfolioCtrl,
     scope;

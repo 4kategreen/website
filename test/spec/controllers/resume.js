@@ -3,7 +3,7 @@
 describe('Controller: ResumeCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('kategreen'));
+  beforeEach(module('kategreenApp'));
 
   var ResumeCtrl,
     scope;

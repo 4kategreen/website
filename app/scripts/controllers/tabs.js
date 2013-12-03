@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('kategreen')
+angular.module('kategreenApp')
   .controller('TabsCtrl', function ($scope,$location) {
     $scope.tabs = [
     	 { title: 'portfolio', route: '/portfolio' },
@@ -11,10 +11,10 @@ angular.module('kategreen')
 
     $scope.getClass = function(path) {
 	    if ($location.path() === path) {
-	      return "active"
+	      return 'active';
 	    } else {
-	      return ""
-	    };
+	      return '';
+	    }
 	}
 
   });

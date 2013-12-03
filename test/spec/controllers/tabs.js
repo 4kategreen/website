@@ -3,7 +3,7 @@
 describe('Controller: TabsCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('kategreen'));
+  beforeEach(module('kategreenApp'));
 
   var TabsCtrl,
     scope,

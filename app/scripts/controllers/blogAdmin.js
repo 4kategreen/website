@@ -6,9 +6,7 @@ angular.module('kategreenApp')
 
   	$scope.master = {};
 
-    $scope.posts = angularFireCollection(new Firebase('https://kategreen.firebaseio.com/posts'), function() {
-
-    });
+    $scope.posts = angularFireCollection(new Firebase('https://kategreen.firebaseio.com/posts'));
 
     angularFire(tags, $scope, 'tags');
 

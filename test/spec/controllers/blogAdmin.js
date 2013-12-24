@@ -16,7 +16,9 @@ describe('Controller: BlogadminCtrl', function () {
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
-  });
+  xit('should take inputs and add them to the database');
+
+  xit('should add a date in unix time to each entry added');
+
+  xit('should accept multiple tags and add them to an array before submitting to the db');
 });

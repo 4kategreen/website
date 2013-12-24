@@ -1,0 +1,20 @@
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Title</th>
+			<th>Date</th>
+			<th>Tags</th>
+			<th>Published</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="post in posts | orderBy:'date':true:reverse">
+			<td>{{post.title}}</td>
+			<td>{{post.date | date:short}}</td>
+			<td><span ng-repeat="tag in post.tags">{{tag}}</span></td>
+			<td>{{post.published}}</td>
+			<td><a ng-href="/admin/{{post.$id}}">Edit</a></td>
+		</tr>
+	</tbody>
+</table>

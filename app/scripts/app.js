@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('kategreenApp', ['ngRoute','firebase'])
+angular.module('kategreenApp', ['ngRoute','ngSanitize','firebase'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -11,10 +11,6 @@ angular.module('kategreenApp', ['ngRoute','firebase'])
         templateUrl: 'views/blog.html',
         controller: 'BlogCtrl'
       })
-      .when('/admin/add', {
-        templateUrl: 'views/admin/add.html',
-        controller: 'BlogAdminCtrl'
-      })
       .when('/resume', {
         templateUrl: 'views/resume.html',
         controller: 'ResumeCtrl'
@@ -22,6 +18,18 @@ angular.module('kategreenApp', ['ngRoute','firebase'])
       .when('/portfolio', {
         templateUrl: 'views/portfolio.html',
         controller: 'PortfolioCtrl'
+      })
+      .when('/admin/add', {
+        templateUrl: 'views/admin/add.html',
+        controller: 'BlogAdminCtrl'
+      })
+      .when('/admin/', {
+        templateUrl: 'views/admin/posts.html',
+        controller: 'BlogAdminCtrl'
+      })
+      .when('/admin/:id', {
+        templateUrl: 'views/admin/edit.html',
+        controller: 'BlogAdminCtrl'
       })
       .otherwise({
         redirectTo: '/'

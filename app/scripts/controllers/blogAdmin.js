@@ -1,14 +1,14 @@
 'use strict';
 
 angular.module('kategreenApp')
-  .controller('BlogAdminCtrl', ['$scope', 'angularFireCollection', 'angularFire', function ($scope, angularFireCollection, angularFire) {
+  .controller('BlogAdminCtrl', ['$scope', '$firebase', function ($scope, firebase) {
   	var tags = new Firebase('https://kategreen.firebaseio.com/tags');
 
   	$scope.master = {};
 
-    $scope.posts = angularFireCollection(new Firebase('https://kategreen.firebaseio.com/posts'));
+    $scope.posts = $firebase(new Firebase('https://kategreen.firebaseio.com/posts'));
 
-    angularFire(tags, $scope, 'tags');
+    $scope.tags = $firebase(new Firebase('https://kategreen.firebaseio.com/tags'));
 
     $scope.reset = function() {
     	$scope.post = angular.copy($scope.master);
@@ -17,7 +17,7 @@ angular.module('kategreenApp')
     $scope.submit = function() {
     	$scope.post.date = Date.now();
 
-    	$scope.posts.add($scope.post);
+    	$scope.posts.$add($scope.post);
 
     	$scope.reset();
     };

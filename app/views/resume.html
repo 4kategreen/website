@@ -1,13 +1,24 @@
 
 
 <h2>Work Experience</h2>
-<pre>{{resume.workExperience | json}}</pre>
+<div ng-repeat="job in resume.workExperience | orderBy:'years.start':true">
+  <h3>{{job.title}} at {{job.company}}</h3>
+	<h4 class="small">{{job.years.start}} - {{job.years.end}}</h4>
+  <div ng-bind-html="job.description">{{job.description}}</div>
+</div>
 
 <h2>Programming Languages and Technology</h2>
-<pre>{{resume.keywords | json}}</pre>
+<ul ng-repeat="keyword in resume.keywords">
+  <li>{{keyword}}</li>
+</ul>
 
 <h2>Education</h2>
-<pre>{{resume.education | json}}</pre>
+<h3>{{resume.education.institution}}</h3>
+<h4 class="small">{{resume.education.degree}} in {{resume.education.major}}, {{resume.education.year}}</h4>
 
 <h2>Accomplishments</h2>
-<pre>{{resume.accomplishments | json}}</pre>
+<div ng-repeat="event in resume.accomplishments | orderBy:'type'">
+  <h3>{{event.accomplishment}}</h3>
+  <h4 class="small" ng-show="event.year">{{event.year}}</h4>
+  <p>{{event.description}}</p>
+</div>

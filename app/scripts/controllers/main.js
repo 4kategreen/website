@@ -1,10 +1,7 @@
 'use strict';
 
 angular.module('kategreenApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('MainCtrl', ['$scope','$firebaseSimpleLogin', '$rootScope', function ($scope, $firebaseSimpleLogin, $rootScope) {
+
+    $scope.loginObj = $rootScope.loginObj;
+  }]);

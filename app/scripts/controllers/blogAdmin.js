@@ -1,14 +1,13 @@
 'use strict';
 
 angular.module('kategreenApp')
-  .controller('BlogAdminCtrl', ['$scope', '$firebase', function ($scope, firebase) {
-  	var tags = new Firebase('https://kategreen.firebaseio.com/tags');
+  .controller('BlogAdminCtrl', ['$scope', '$firebase', 'FIREBASE_URL', function ($scope, $firebase, FIREBASE_URL) {
 
   	$scope.master = {};
 
-    $scope.posts = $firebase(new Firebase('https://kategreen.firebaseio.com/posts'));
+    $scope.posts = $firebase(new Firebase(FIREBASE_URL + '/posts'));
 
-    $scope.tags = $firebase(new Firebase('https://kategreen.firebaseio.com/tags'));
+    $scope.tags = $firebase(new Firebase(FIREBASE_URL + '/tags'));
 
     $scope.reset = function() {
     	$scope.post = angular.copy($scope.master);

@@ -1,23 +1,23 @@
 'use strict';
 
 angular.module('kategreenApp')
-  .controller('BlogAdminCtrl', ['$scope', '$firebase', 'FIREBASE_URL', function ($scope, $firebase, FIREBASE_URL) {
+  .controller('BlogAdminCtrl', ['$firebase', 'FIREBASE_URL', function ($firebase, FIREBASE_URL) {
 
-  	$scope.master = {};
+  	this.master = {};
 
-    $scope.posts = $firebase(new Firebase(FIREBASE_URL + '/posts'));
+    this.posts = $firebase(new Firebase(FIREBASE_URL + '/posts'));
 
-    $scope.tags = $firebase(new Firebase(FIREBASE_URL + '/tags'));
+    this.tags = $firebase(new Firebase(FIREBASE_URL + '/tags'));
 
-    $scope.reset = function() {
-    	$scope.post = angular.copy($scope.master);
+    this.reset = function() {
+    	this.post = angular.copy($scope.master);
     };
 
-    $scope.submit = function() {
-    	$scope.post.date = Date.now();
+    this.submit = function() {
+    	this.post.date = Date.now();
 
-    	$scope.posts.$add($scope.post);
+    	this.posts.$add($scope.post);
 
-    	$scope.reset();
+    	this.reset();
     };
   }]);

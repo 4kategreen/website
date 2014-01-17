@@ -17,7 +17,7 @@
 
     <script src="components/jquery/jquery.min.js"></script>
   </head>
-  <body ng-app='kategreenApp' ng-controller="MainCtrl">
+  <body ng-app='kategreenApp' ng-controller="MainCtrl as main">
     <!--[if lt IE 7]>
       <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->
@@ -30,11 +30,11 @@
     <!-- Add your site or application content here -->
     <div class="body-container">
       <div class="container">
-        <header>
+        <!-- <header>
           <h1 class="title">
             kate green
           </h1>
-        </header>
+        </header> -->
         <nav class="navbar" role="navigation" ng-controller="TabsCtrl">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
@@ -55,9 +55,9 @@
         <div class="content">
           <div class="main" ng-view></div>
           <div class="rail">
-            <button href="#" ng-hide="loginObj.user" ng-click="loginObj.$login('twitter')">Login</button>
-            <span ng-show="loginObj.user">
-              {{loginObj.user.name}} | <a href="#" ng-click="loginObj.$logout()">Logout</a>
+            <button href="#" ng-hide="main.loginObj.user" ng-click="main.loginObj.$login('twitter')">Login</button>
+            <span ng-show="main.loginObj.user">
+              {{main.loginObj.user.name}} | <a href="#" ng-click="main.loginObj.$logout()">Logout</a>
             </span>
 
             <h3>Stuff</h3>

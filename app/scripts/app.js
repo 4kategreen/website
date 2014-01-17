@@ -5,12 +5,12 @@ angular.module('kategreenApp', ['ngRoute','ngSanitize','firebase'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        templateUrl: 'views/blog.html',
+        controller: 'BlogCtrl as blog'
       })
       .when('/blog', {
         templateUrl: 'views/blog.html',
-        controller: 'BlogCtrl'
+        controller: 'BlogCtrl as blog'
       })
       .when('/resume', {
         templateUrl: 'views/resume.html',
@@ -45,6 +45,8 @@ angular.module('kategreenApp', ['ngRoute','ngSanitize','firebase'])
     $rootScope.loginObj = $firebaseSimpleLogin(dataRef);
     
     $rootScope.$on('$routeChangeStart', function(event, currRoute, prevRoute){
+      // also create a test that it's not me.
+      // reload redirects
       if (currRoute.$$route.authRequired && !$rootScope.loginObj.user) {
         // make a modal or something here.
         $location.path('/')

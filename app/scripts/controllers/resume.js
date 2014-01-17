@@ -1,6 +1,6 @@
 'use strict';
 
 angular.module('kategreenApp')
-  .controller('ResumeCtrl', ['$scope', '$firebase', 'FIREBASE_URL', function ($scope, $firebase, FIREBASE_URL) {
-    $scope.resume = $firebase(new Firebase(FIREBASE_URL + '/resume'));
+  .controller('ResumeCtrl', ['$firebase', 'FIREBASE_URL', function ($firebase, FIREBASE_URL) {
+    this.resume = $firebase(new Firebase(FIREBASE_URL + '/resume'));
   }]);

@@ -1,7 +1,8 @@
 'use strict';
 
 angular.module('kategreenApp')
-  .controller('MainCtrl', ['$scope','$firebaseSimpleLogin', '$rootScope', function ($scope, $firebaseSimpleLogin, $rootScope) {
+  .controller('MainCtrl', ['$firebaseSimpleLogin', '$rootScope', function ($firebaseSimpleLogin, $rootScope) {
+    var main = this;
 
-    $scope.loginObj = $rootScope.loginObj;
+    main.loginObj = $rootScope.loginObj;
   }]);

@@ -9,7 +9,7 @@
 		</tr>
 	</thead>
 	<tbody>
-		<tr ng-repeat="post in posts | orderBy:'date':true:reverse">
+		<tr ng-repeat="post in posts | published:true | orderBy:'date':true:reverse">
 			<td>{{post.title}}</td>
 			<td>{{post.date | date:short}}</td>
 			<td><span ng-repeat="tag in post.tags">{{tag}}</span></td>

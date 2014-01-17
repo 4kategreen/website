@@ -1,24 +1,36 @@
+<resume>
+  <h2>Work Experience</h2>
+  <div job ng-repeat="job in resume.workExperience | orderBy:'years.start':true">
+    <h3 title>{{job.title}} at {{job.company}}</h3>
+  	<h4 class="small"><year start>{{job.years.start}}</year> - <year end>{{job.years.end}}</year></h4>
+    <div description ng-bind-html="job.description">{{job.description}}</div>
+  </div>
 
+  <h2>Programming Languages and Technology</h2>
+  <ul ng-repeat="keyword in resume.keywords">
+    <li keyword>{{keyword}} <category>{{category}}</category></li>
+  </ul>
 
-<h2>Work Experience</h2>
-<div ng-repeat="job in resume.workExperience | orderBy:'years.start':true">
-  <h3>{{job.title}} at {{job.company}}</h3>
-	<h4 class="small">{{job.years.start}} - {{job.years.end}}</h4>
-  <div ng-bind-html="job.description">{{job.description}}</div>
-</div>
+  <h2>Education</h2>
+  <div education>
+    <h3 school>{{resume.education.institution}}</h3>
+    <h4 class="small"><degree>{{resume.education.degree}}</degree> in <major>{{resume.education.major}}</major>, <year>{{resume.education.year}}</year></h4>
+  </div>
 
-<h2>Programming Languages and Technology</h2>
-<ul ng-repeat="keyword in resume.keywords">
-  <li>{{keyword}}</li>
-</ul>
+  <h2>Accomplishments</h2>
+  <div awesome ng-repeat="event in resume.accomplishments | orderBy:'type'">
+    <h3>{{event.accomplishment}}</h3>
+    <category>{{even.type}}</category>
+    <h4 year class="small" ng-show="event.year">{{event.year}}</h4>
+    <p description>{{event.description}}</p>
+  </div>
+</resume>
 
-<h2>Education</h2>
-<h3>{{resume.education.institution}}</h3>
-<h4 class="small">{{resume.education.degree}} in {{resume.education.major}}, {{resume.education.year}}</h4>
-
-<h2>Accomplishments</h2>
-<div ng-repeat="event in resume.accomplishments | orderBy:'type'">
-  <h3>{{event.accomplishment}}</h3>
-  <h4 class="small" ng-show="event.year">{{event.year}}</h4>
-  <p>{{event.description}}</p>
-</div>
+  job:
+    job, title, year{start|end}, description
+  keywords:
+    keyword, category
+  education:
+    education, school, major, year
+  accomplishment:
+    awesome, category, year, description

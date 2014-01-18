@@ -2,6 +2,7 @@
 
 angular.module('kategreenApp', ['ngRoute','ngSanitize','firebase'])
   .constant('FIREBASE_URL', 'https://kategreen.firebaseio.com')
+  .constant('USERS', 370373795)
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -39,10 +40,9 @@ angular.module('kategreenApp', ['ngRoute','ngSanitize','firebase'])
         redirectTo: '/'
       });
   })
-  .run(['$rootScope', '$location', '$firebaseSimpleLogin', 'FIREBASE_URL', function($rootScope, $location, $firebaseSimpleLogin, FIREBASE_URL) {
-    var dataRef = new Firebase(FIREBASE_URL);
-    
-    $rootScope.loginObj = $firebaseSimpleLogin(dataRef);
+  .run(['$rootScope', 'Auth', '$location', function($rootScope, Auth, $location) {
+
+    $rootScope.loginObj = Auth;
     
     $rootScope.$on('$routeChangeStart', function(event, currRoute, prevRoute){
       // also create a test that it's not me.
